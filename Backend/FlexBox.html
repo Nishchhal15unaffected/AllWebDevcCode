@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+		FlexBox
+	</title>
+	<style type="text/css">
+		.flexContainer{
+			display: flex;
+			/*flex-direction: ;*/
+			flex-wrap: wrap;
+		}
+		.FlexBox{
+			background-color:orange;
+			width: 500px;
+			padding: 10px;
+			margin: 20px;
+		}
+		.item1{
+			min-height: 100px;
+			order:2;
+			transform: rotateY(-100deg);
+			display: inline-block;
+			transition: all 3s ease-in-out 0.5s;
+		}
+		.item1:hover{
+			height: 500px;
+		}
+		.item2{
+			min-height: 150px;
+			order: 1;
+			
+		}
+		.item3{
+			min-height: 250px;
+			order: 0;
+		}
+
+
+	</style>
+</head>
+<body>
+<div class="flexContainer">
+	<div class="FlexBox item1">
+		1
+	</div>
+
+	<div class="FlexBox item2">
+		2
+	</div>
+	<div class="FlexBox item3">
+	3
+	</div>
+</div>
+</body>
+</html>
